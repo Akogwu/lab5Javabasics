@@ -42,16 +42,14 @@ console.log(maxOfThree(1, 11, 15));
 
 /**
  * Boolean: true if char is vowel else false
- * @param {character} char 
+ * @param {character:String} char
  * @returns 
  */
 const isVowel = (char) => {
     if (char.length > 1) return "please enter a single character";
     let vowel = "AEIOUY";
-    if (vowel.includes("" + char.toUpperCase())) {
-        return true
-    }
-    return false;
+    return vowel.includes("" + char.toUpperCase());
+
 }
 
 console.log(isVowel("I"));
@@ -65,7 +63,7 @@ console.log(isVowel("I"));
  */
 const sum = (arr) => {
     if (!Array.isArray(arr)) return "Enter an array of numbers";
-    if (arr.length == 1) {
+    if (arr.length === 1) {
         return arr[0];
     } else {
         return arr.reduce((val1, val2) => val1 + val2);
@@ -81,7 +79,7 @@ console.log("Sum array of numbers: " + sum([1, 2, 3, 4]));
  */
 const multiply = (arr) => {
     if (!Array.isArray(arr)) return "Enter an array of numbers";
-    if (arr.length == 1) return arr[0];
+    if (arr.length === 1) return arr[0];
     return arr.reduce((val1, val2) => val1 * val2);
 }
 
@@ -120,8 +118,8 @@ console.log("Length of the longest word: " + findLongestWord(["hello", "World", 
 
 /**
  * Return filtered array of words greater than I
- * @param {array:words} words 
- * @param {number:i} i 
+ * @param {word:String} words
+ * @param {i:number} i
  * @returns 
  */
 const filterLongWords = (words, i) => {
