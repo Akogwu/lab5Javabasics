@@ -1,12 +1,11 @@
 /**
  * Get max value of two numbers
- * @param {number} number1 
- * @param {number} number2 
+ * @param {number1:number} number1
+ * @param {number2:number} number2
  * @returns 
  */
 const max = (number1, number2) => {
     if (isNaN(number1) || isNaN(number2)) return "Only numbers are allowed";
-
     if (number1 > number2) {
         return number1;
     } else {
@@ -20,9 +19,9 @@ console.log(max(10, 5));
 
 /**
  * Get max of three numbers
- * @param {number} number1 
- * @param {number} number2 
- * @param {number} number3 
+ * @param {number1:number} number1
+ * @param {number2:number} number2
+ * @param {number2:number} number3
  * @returns 
  */
 const maxOfThree = (number1, number2, number3) => {
